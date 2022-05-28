@@ -1,0 +1,231 @@
+*{
+    /* padding: 0; */
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     outline: 0;
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+.page{
+    font-family: 'Roboto', sans-serif;
+}
+ .header{
+   /*background-color:rgb(219, 174, 115);*/
+    width: 100vw;
+    background-image: url("../imagenes/machine.jpg");
+    background-size: cover
+ }
+ .header a:hover{background-color: transparent;}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.aside{
+    flex:30%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.contenido-p{
+    flex: 70%;
+    padding: 20px;
+    background-image: url("../imagenes/coffeebeans.jpg");
+    background-size: cover;
+    color:antiquewhite ;
+    font-family: 'Franklin Gothic Medium';
+}
+.registro{
+    flex: 70%;
+    padding: 20px;
+    background-image: url("../imagenes/coffeebeans.jpg");
+    background-size: cover;
+    color:antiquewhite ;
+    font-family: 'Franklin Gothic Medium';
+    text-align:start;
+    align-items: center;
+    
+
+}
+label {
+    display:flow-root;
+    padding-left: 15px;
+    text-indent: -15px;
+    
+}
+ 
+.menu{
+    background-color:black;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_items{
+    display: flex;
+    padding: 14px 20px;
+    color:white;
+    list-style: none;
+}
+.menu_items>li{
+    margin: 0 5px;
+}
+.menu_items li a{
+    transition: all 2s;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 7px 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.logo{
+    font-size: 100px;
+    padding-left:20px;
+    padding-bottom: 0px;
+    height: 50px;
+    width: 100px;
+    display:flex;
+    background-image: url("../imagenes/logo2.png");
+    background-position:10vw;
+    background-size: cover;
+
+}
+
+
+.btn_menu{
+    cursor: pointer;
+    display: none;
+}
+ul.show{
+    top: 65px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    background-image: url("../imagenes/table.jpg");
+    background-size:cover;
+    }
+
+h1 {
+    font-family:'Roboto', sans-serif;
+    font-size: 4vw;
+    color:whitesmoke;
+   
+}
+
+header{
+    font-weight: 700;
+}
+a:link {color: rgba(255, 30, 0, 0.986);}
+a:hover {background-color: blue;}
+
+@media screen and (max-width:952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:850px){
+    .menu, .main{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .body{
+        padding-top: 70px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .menu{
+        height: 65px;
+        flex-direction: column;
+        background-color: #414141;
+    }
+    .header{
+        height:110px;
+        font-size: 30px;
+    }
+    .btn_menu{
+        display:block
+    }
+    .menu_items{
+        height:calc(100% - 55px);
+        overflow-y:auto;
+        transition: .4s;
+        flex-direction:column;
+        align-items: center;
+        margin-right: 20px;
+        background:#2c3e50;
+        position:fixed;
+        left: 100%;
+        top: 180px;
+        padding: 20px 0;
+        width: 100%;
+
+    }
+    .menu_items li{
+        margin: 20px 0 0 0;
+        line-height: 1px;
+    }
+    .menu_items li:hover{
+        background: none;
+    }
+    .menu_items li a{
+        font-size: 10px;
+        color:white;
+        font-weight: bold;
+
+    }
+    .menu_items li a:hover{
+        color:blue
+    }
+    .logo{
+        font-size: 10px;
+        padding-left:20px;
+        line-height: 20px;
+        height: 50px;
+        width: 50px;
+    }
+    .menu_items_visible{
+        left: 0;
+
+    }
+}
+
+.fa-twitter{
+    color: blue;
+}
+.fa-twitter:hover{
+    background-color:transparent;
+}
+
+.fa-facebook{
+    color: darkblue;
+}
+.fa-facebook:hover{
+    background-color: transparent;
+}
+.fa-instagram{
+    color:mediumvioletred
+}
+.fa-instagram:hover{
+    background-color: transparent;
+}
+.contactos{
+    color:white;
+    text-align: center;
+
+}
